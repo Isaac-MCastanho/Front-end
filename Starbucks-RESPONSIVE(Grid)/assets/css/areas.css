@@ -1,0 +1,198 @@
+
+
+/* cabeçalho(bar) verde usado nas areas do site  */
+
+.bar{
+    background-color: var(--corBar); 
+    width: 168px;
+    height: 22px;
+}
+
+
+/* Fim cabeçalho */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.area1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area1--content{
+    padding: 80px;
+}
+
+
+.area1--quote{
+    margin-bottom: 30px;
+}
+
+.area1--text{
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+
+.area1--img1{
+    height: 350px;
+    background-image: url('../img/f2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.area1--img2{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-image: url('../img/f1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/* AREA 2 */
+
+
+
+
+.area2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area2--content{
+    padding: 80px;
+}
+
+
+.area2--text{
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+
+.area2--img1{
+    height: 450px;
+    background-image: url('../img/f4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.area2--img2{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-image: url('../img/f3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+/* AREA 3 */
+
+
+
+.area3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area3--content{
+    padding: 250px 80px;
+    background-image: url('../img/bg2.jpg');
+    background-size: cover;
+    background-position: left;
+}
+
+
+.area3--text{
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+
+.area3--img1{
+    background-image: url('../img/f5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+/* AREA 4 */
+
+
+.area4{
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    background-color: #e8e9ee;
+}
+
+.area4--content{
+    padding: 160px 80px;
+    
+}
+
+
+.area4--text{
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+
+.area4--img1{
+    background-image: url('../img/bg3.jpg');
+    background-position: left;
+}
+
+
+
+
+
+
+
+/* AREA 4 */
+
+
+.area5{
+    background-image: url('../img/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+
+
+
+
+/* footer */
+
+
+
+
+footer{
+    background-color: #333;
+    color: #FFF;
+    padding: 80px;
+    text-align: center;
+}
