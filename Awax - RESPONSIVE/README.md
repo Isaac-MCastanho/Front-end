@@ -10,3 +10,5 @@ Conceitos: HTML5 - CCS3 - Responsividade
 
 Problemas de responsividade em: <!-- Section Default 05 exc -->
 
+Conclusão: Erros corrigidos, erro bobo(usando medidas absoluta com min-width, estava impedindo a section de se ajustar de  forma natural e responsiva.).
+

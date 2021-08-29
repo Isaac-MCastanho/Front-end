@@ -537,7 +537,6 @@ CSS DE AREAS ESPECIFICAS
 
  .section-happyc-body{
  	width: 100vw;
- 	min-width: 880px;
  	display: flex;
  	flex-direction: column;
  	justify-content: center;
@@ -975,8 +974,7 @@ footer{
 
 
 	.section-happyc-body{
-		padding: 0 100px;
-		min-width: 450px;
+		padding: 0 50px;
 		margin: auto;
 	}
 
