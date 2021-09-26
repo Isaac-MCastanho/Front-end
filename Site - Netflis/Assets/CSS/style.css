@@ -1,0 +1,129 @@
+:root{
+    --vermelho:#e50914;
+    --preto:#141414;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:white;
+}
+
+
+/* */
+
+.div-principal{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)100%), url('../img/capa-house.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.div-principal .descricao{
+    margin-top: 10px;
+    margin-bottom:30px; 
+}
+
+.titulo{
+    font-size: 40px;
+    margin-top: 15%;
+    font-family: 'Trebuchet MS', Arial;
+}
+
+.botao{
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.30s ease;
+    cursor: pointer;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.div-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+
+.carrosel-filmes{
+    margin-top:5px;
+}
+
+
+
+
+
+
+@media screen and (max-width:700px){
+    
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+
+}
+
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;
+    }
+}
