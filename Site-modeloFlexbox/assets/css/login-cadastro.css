@@ -1,0 +1,377 @@
+
+
+
+main{
+    background: linear-gradient(transparent,transparent,transparent,transparent,#1b1a1b);
+}
+
+
+.login-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    
+}
+
+
+.content{
+    color: black;
+    border-radius: 10px;
+    background-color: white; 
+    width: 960px;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+} 
+.content::before{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient( 109.6deg,  rgba(15,2,2,1) 41.2%, rgba(36,163,190,1) 71.1% ); 
+    background-size: 300% 300%;
+    width: 40%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    animation-name: linearAnimated;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    left: 0;
+}
+
+@keyframes linearAnimated{
+    0%{background-position: 0 50%;color:gray;}
+    50%{background-position: 100% 50%; color:rgba(36,163,190,1);}
+    100%{background-position: 0 50%; color:gray ;}
+}
+
+
+.title{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.second-column .title{
+    color: rgba(36,163,190,1);
+}
+.description{
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+}.second-column .description{
+    color: rgba(36,163,190,1);
+}
+
+
+.btn-TdC{
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 10px 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 180px;
+    align-self: center;
+}
+.btn-TdC:hover{
+    background-color: white;
+    color: rgba(36,163,190,1);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.second-column .btn-TdC{
+    background-color: rgba(36,163,190,1);
+}
+.second-column .btn-TdC:hover{
+    background-color: transparent;
+    border: 1px solid rgba(36,163,190,1);
+    color: rgba(36,163,190,1);
+}
+
+
+
+
+
+
+.first-content{
+    display: flex;
+}
+.first-content .second-column{
+    z-index: 11;
+}
+.first-column{
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+
+}
+
+
+.second-column{
+    display: flex;
+    align-items:  center;
+    width: 60%;
+    flex-direction: column;
+}
+
+.social-media-cadastro ul{
+    display: flex;
+    list-style: none;
+    width: 80%;
+    margin: 5px auto;
+    justify-content: space-around;
+
+    
+}
+.social-media-cadastro{
+    width: 200px;
+}
+
+
+
+
+
+
+.item-media a{
+    display: block;
+    color: #95a5a6;
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}.item-media:nth-child(1) a:hover{
+    background-color: rgba(36,163,190,1);
+    color: white;
+    border-color: white;
+    transition: all 0.5s ease;
+}.item-media:nth-child(2) a:hover{
+    /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); */
+    background-color: rgba(36,163,190,1);
+    border-color: white;
+    color: white;
+    transition: all 0.5s ease;
+}.item-media:nth-child(3) a:hover{
+    background-color: rgba(36,163,190,1);
+    color: white;
+    border-color: white;
+    transition: all 0.5s ease;
+}
+
+
+ form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.form input{
+    width: 100%;
+    height: 45px;
+    border: none;
+    background-color: #ecf0f1;
+}
+
+.label-input{
+    background: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+
+    animation-name: linearAnimated;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.icon-modify{
+    padding: 0 10px;
+}
+
+
+
+
+/* second content */
+
+.seconds-content{
+    position:absolute;
+    display: flex;
+}
+
+.seconds-content .first-column{
+    order: 2;
+    z-index: -1;
+}
+.seconds-content .second-column{
+    order: 1;
+    z-index: -1;
+}
+
+.forgot{
+    margin: auto;
+    color: gray;
+}
+
+
+.sign-in-js .first-content .first-column{
+    z-index: -1;
+}
+
+
+.sign-in-js .seconds-content .second-column{
+    z-index: 13;
+}
+.sign-in-js .seconds-content .first-column{
+    z-index: 15;
+}
+
+.sign-in-js .content::before{
+    left: 60%;
+    border-radius: 0 10px 10px 0;
+
+    animation: slidein 3s, linearAnimated 10s infinite ease-in-out;
+
+    z-index: 14;
+}
+
+.sign-up-js .content::before{
+    animation: slideout 3s, linearAnimated 10s infinite ease-in-out;
+    z-index: 13;
+}
+
+
+.sign-up-js .seconds-content .first-column{
+    z-index: -1;
+}
+
+
+.sign-up-js .first-content .second-column{
+    z-index: 11;
+
+}
+.sign-up-js .first-content .first-column{
+    z-index: 14;
+}
+
+ /* deslocamento do conteudo atras do before */
+.sign-in-js .first-content .second-column{
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoEsq 1s;
+}
+
+.sign-up-js .seconds-content .second-column{
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoDir 1s;
+}
+
+
+@keyframes deslocamentoEsq{
+    from{
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    25%{
+        left: -80px;
+        opacity: .7;
+    }
+
+    50%{
+        left: -100;
+        opacity: .2;
+    }
+
+    to{
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+@keyframes deslocamentoDir{
+    from{
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    25%{
+        left: 80px;
+        opacity: .7;
+    }
+
+    50%{
+        left: 100;
+        opacity: .2;
+    }
+
+    to{
+        left: 110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes slidein{
+    from{
+        left: 0;
+        width: 40%;
+    }
+
+    25%{
+        left: 5%;
+        width: 50%;
+    }
+
+    50%{
+        left: 25%;
+        width: 60%;
+    }
+
+    75%{
+        left: 45%;
+        width: 50%;
+    }
+
+    to{
+        left: 60%;
+        width: 40%;
+    }
+}
+
+@keyframes slideout{
+    from{
+        left: 60%;
+        width: 40%;
+    }
+
+    25%{
+        left: 45%;
+        width: 50%;
+    }
+
+    50%{
+        left: 25%;
+        width: 60%;
+    }
+
+    75%{
+        left: 5%;
+        width: 50%;
+    }
+
+    to{
+        left: 0%;
+        width: 40%;
+    }
+}

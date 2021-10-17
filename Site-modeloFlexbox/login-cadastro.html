@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Parte do meu, portfólio Front-end!">
+    <meta name="author" content="Isaac-MCastanho">
+    <title>Login</title>
+    <link rel="shortcut icon" href="assets/img/logo/logo.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200&display=swap">
+    <link rel="stylesheet" href="assets/css/style.css"><!-- Header, Gerais e rodape -->
+    <link rel="stylesheet" href="assets/css/login-cadastro.css">
+    <link rel="stylesheet" href="assets/css/media-query.css">
+    <script src="https://kit.fontawesome.com/617c731215.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="assets/css/media-query.css">
+
+</head>
+
+
+<body class="sign-up-js">
+    
+    <header>
+        <div class="container header-area ">
+
+            <div class=" header-logo"><a href="index.html"></a></div>
+
+
+            
+
+            <div class="menu" style="right: -100vw;">
+                <nav class=>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Projetos</a></li>
+                        <li><a href="">sobre</a></li>
+                        <li><a href="">contato</a></li>
+                        <li><a href="">historia</a></li>
+                    </ul>
+                </nav> 
+            </div>               
+           
+            <a href="" class="button-login btn">Login/Cadastro</a>
+
+            <div class="burger" onclick="menuClick()">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="login-area">
+
+
+        <div class="content first-content">
+
+            <div class="first-column">
+                <h2 class="title title-primary">Welcome Back!</h2>
+                <p class="description description-primary">To keep connected with us</p>
+                <p class="description description-primary">please login with your personal info</p>
+                <button class="btn-TdC btn-TdC-primary" onclick="clickLogin()">sing in</button>
+            </div>
+
+            <div class="second-column">
+                <h2 class="title">Create Account</h2>
+                <div class="social-media-cadastro">
+                    <ul>
+                        <li class="item-media"><a href="#" ><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="item-media"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="item-media"><a href="#"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <p class="description description-second">or use your email for registration:</p>
+                
+                <form  class="form">
+                    <label for="" class="label-input">
+                        <i class="fas fa-user icon-modify"></i>
+                        <input type="text" placeholder="Nome">
+                    </label>
+                    
+                    <label for=""class="label-input">
+                        <i class="fas fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    
+                    <label for=""class="label-input">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+                    
+                    <button class="btn-TdC">sing up</button>
+                </form>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="content seconds-content">
+            
+
+            <div class="first-column">
+                <h2 class="title title-primary">Hello, Friend!</h2>
+                <p class="description description-primary">Enter your personal detals</p>
+                <p class="description">and start journey with us</p>
+                <button class="btn-TdC" onclick="clickLogin()">sing up</button>
+            </div>
+
+
+            <div class="second-column">
+                <h2 class="title">Sing In To Developer</h2>
+                <div class="social-media-cadastro">
+                    <ul>
+                        <li class="item-media"><a href="#" ><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="item-media"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="item-media"><a href="#"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <p class="description">or use your email account</p>
+                <form  class="form">
+                   
+                    
+                    <label for=""class="label-input">
+                        <i class="fas fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    
+                    <label for=""class="label-input">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+
+                    <a href="" class="forgot">Forgot your password?</a>
+                    
+                    <button class="btn-TdC">sing in</button>
+                </form>
+            </div>
+
+
+
+        </div>
+
+
+
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="footer-conteudo">
+            
+            <div class="footer-logo"></div>
+
+            <div class="footer-links">
+
+                <ul class="footer-ul">
+                    <li>Inicio</li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Projetos</a></li>
+                    <li><a href="">Historia</a></li>
+                </ul>
+
+                <ul class="footer-ul">
+                    <li>Sobre-nós</li>
+                    <li><a href="">Informações da empresa</a></li>
+                    <li><a href="">Contato</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+
+                <ul class="footer-ul">
+                    <li>Suporte</li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Telefones</a></li>
+                    <li><a href="">Chat</a></li>
+                </ul>
+
+            </div>
+
+            <!-- <div class="redes"> -->
+                <div class="footer-redes">
+                    <a href="https://www.facebook.com/isaac.marquescastanho" target="_blank"><img src="assets/img/facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com/_i.castanho_/" target="_blank"><img src="assets/img/insta.png" alt=""></a>
+                    <a href="https://github.com/Isaac-MCastanho" target="_blank"><img src="assets/img/github.png" alt=""></a>
+
+                </div>
+            <!-- </div> -->
+
+        </div>
+
+        <div class="footer-copy">
+            <h5>&copy; 2021 Copyright - Isaac-MCastanho</h5>
+            <div>Logo made by <a href="https://www.designevo.com/" title="Free Online Logo Maker">DesignEvo free logo creator</a></div>
+        </div>
+
+    </footer>
+
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+
+
+</html>
