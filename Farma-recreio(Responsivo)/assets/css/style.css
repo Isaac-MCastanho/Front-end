@@ -179,6 +179,10 @@ article.banner-entrega {
 }
 
 /* SEÇÃO DE PRODUTOS */
+
+.produtos {
+  border-bottom: 4px solid #a11217;
+}
 section.produtos-conteudo {
   border: 1px solid transparent;
   position: relative;
@@ -256,7 +260,6 @@ section.produtos-conteudo {
 
 .testemunhos {
   margin-bottom: 50px;
-  border-top: 4px solid #a11217;
 }
 
 .testemunhos-banner {
