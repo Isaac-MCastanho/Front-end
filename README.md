@@ -12,7 +12,7 @@
 
 <div align="center">
 <img width="400" src="./web.gif" alt="Foto de preview do site Awax, versão desktop."/>
-
+</div>
 
 
 

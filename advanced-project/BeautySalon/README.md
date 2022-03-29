@@ -4,14 +4,16 @@
 <h4 align="center">
   Projeto criado para praticar e elevar conhecimentos e padrões de Desenvolvimento Front-end.
 </h4>
-## 🔎Preview
 
+## 🔎Preview
 <div align="center">
 <h5>Desktop</h5>
-<img src="./preview-desktop.PNG" alt="Foto de preview do site Awax, versão desktop."/>
+<img src="./preview-desktop.png" alt="Foto de preview do site, versão desktop."/>
 <h5>Mobile</h5>
-<img  src="./preview-mobile.PNG" alt="Foto de preview do site Awax, versão mobile."/>
+<img  src="./preview-mobile.png" alt="Foto de preview do site, versão mobile."/>
 </div>
+
+
 
 ## 📚 Seções
 O site é composto por 5 seções diferentes:
