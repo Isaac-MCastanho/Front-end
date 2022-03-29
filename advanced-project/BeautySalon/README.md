@@ -6,9 +6,12 @@
 </h4>
 ## 🔎Preview
 
-![image-20220116223740797](C:\Users\FERNANDO\AppData\Roaming\Typora\typora-user-images\image-20220116223740797.png)
-
-![image-20220116225700455](C:\Users\FERNANDO\AppData\Roaming\Typora\typora-user-images\image-20220116225700455.png)
+<div align="center">
+<h5>Desktop</h5>
+<img src="./preview-desktop.PNG" alt="Foto de preview do site Awax, versão desktop."/>
+<h5>Mobile</h5>
+<img  src="./preview-mobile.PNG" alt="Foto de preview do site Awax, versão mobile."/>
+</div>
 
 ## 📚 Seções
 O site é composto por 5 seções diferentes:
