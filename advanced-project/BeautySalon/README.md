@@ -7,11 +7,16 @@
 
 ## 🔎Preview
 <div align="center">
+    <div align='left'>
+        <br>
+    <span><b>Link do Site:</b></span> <a href='https://isaac-mcastanho.github.io/Front-end/advanced-project/BeautySalon/'>BeautySalon</a>
+    </div>
 <h5>Desktop</h5>
 <img src="./preview-desktop.png" alt="Foto de preview do site, versão desktop."/>
 <h5>Mobile</h5>
 <img  src="./preview-mobile.png" alt="Foto de preview do site, versão mobile."/>
 </div>
+
 
 
 

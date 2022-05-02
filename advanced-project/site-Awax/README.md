@@ -8,11 +8,16 @@
 
 ## 🔎Preview
 <div align="center">
+    <div align='left'>
+        <br>
+    <span><b>Link do Site:</b></span> <a href='https://isaac-mcastanho.github.io/Front-end/advanced-project/site-Awax/home'>Awax</a>
+    </div>
 <h5>Desktop</h5>
 <img src="./preview-desktop.PNG" alt="Foto de preview do site Awax, versão desktop."/>
 <h5>Mobile</h5>
 <img  src="./preview-mobile.PNG" alt="Foto de preview do site Awax, versão mobile."/>
 </div>
+
 
 ## 📚 Seções
 O site é composto por 7 seções diferentes:

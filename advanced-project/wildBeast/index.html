@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isaac Wildbeast - CSS Grid</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="estrutura">
+      <header class="header">
+        <a href="#" class="logo"
+          ><img src="./assets/img/wildbeast.svg" alt="Logo do site Wildbeast"
+        /></a>
+        <div class="toggleMobile">
+          <div></div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">animais</a></li>
+            <li><a href="#">sobre</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <nav class="sidenav">
+        <ul>
+          <li>
+            <a href="#"><img src="./assets/icons/cervo.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./assets/icons/leao.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./assets/icons/gato.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./assets/icons/vaca.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./assets/icons/ovelha.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./assets/icons/abelha.svg" alt="" /></a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="content">
+        <div class="titulo">
+          <h1>Lobo cinza</h1>
+          <span>da familia canis lupus</span>
+        </div>
+
+        <div class="caracteristicas">
+          <div>
+            <span class="numero"> 72 </span>
+            <span class="rotulo"> kg </span>
+          </div>
+          <div>
+            <span class="numero"> 13 </span>
+            <span class="rotulo"> age </span>
+          </div>
+        </div>
+
+        <p class="col-wide">
+          É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior,
+          cerca de 300 mil anos atrás.[2] O sequenciamento de DNA e estudos
+          genéticos reafirmam que o lobo cinzento é ancestral do cão doméstico
+        </p>
+
+        <img
+          class="image-1"
+          src="assets/img/wolf1.jpg"
+          alt="Foto de um lobo uivando na neve"
+        />
+
+        <p class="destaq">
+          É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior,
+          cerca de 300 mil anos atrás.[2] O sequenciamento de DNA e estudos.
+        </p>
+
+        <img
+          class="image-2"
+          src="assets/img/wolf2.jpg"
+          alt="dois lobos na neve"
+        />
+
+        <p>
+          O peso e tamanho dos lobos variam muito em todo o mundo, tendendo a
+          aumentar proporcionalmente com a latitude, como previsto pela teoria
+          de Christian Bergmann. Em geral, a altura, medida a partir dos ombros,
+          varia de 60 a 95 centímetros.
+        </p>
+        <p>
+          O peso varia geograficamente. Em média, os lobos europeus pesam 38,5
+          kg; os lobos da América do Norte, 36 kg; os lobos indianos e árabes,
+          25 kg.[7] Embora raros, lobos com mais de 77 kg foram encontrados no
+          Alasca, Canadá,[8] e na antiga União Soviética.
+        </p>
+
+        <blockquote class="citacao col-wide">
+          <p>
+            “Há algo no uivar do lobo que tira um homem do aqui e agora e o
+            transporta para uma floresta da mente.”
+          </p>
+        </blockquote>
+
+        <ul class="atributos">
+          <li>Surgiu: 12.000 anos</li>
+          <li>Tipo: Mamífero</li>
+          <li>Idade Média: 13 anos</li>
+          <li>Macho adulto: 80kg</li>
+          <li>Fêmea adulta: 55kg</li>
+          <li>Família: Lupus</li>
+        </ul>
+
+        <div class="info">
+          <p>
+            É um sobrevivente da Era do Gelo, originário do Pleistoceno
+            Superior, cerca de 300 mil anos atrás.[2] O sequenciamento de DNA e
+            estudos genéticos reafirmam que o lobo cinzento é ancestral do cão
+            doméstico.
+          </p>
+
+          <p>
+            É um sobrevivente da Era do Gelo, originário do Pleistoceno
+            Superior, cerca de 300 mil anos atrás.[2] O sequenciamento de DNA e
+            estudos genéticos reafirmam que o lobo cinzento é ancestral do cão
+            doméstico.
+          </p>
+        </div>
+
+        <img src="assets/img/wolf3.jpg" alt="" class="col-wide" />
+      </main>
+
+      <aside class="anuncios">
+        <div class="anuncio-item">
+          <img src="assets/img/anuncio-1.jpg" alt="" />
+        </div>
+        <div class="anuncio-item">
+          <img src="assets/img/anuncio-2.jpg" alt="" />
+        </div>
+      </aside>
+
+      <footer>
+        <p>Origamid © 2012 - 2017. Alguns direitos reservados.</p>
+      </footer>
+    </div>
+
+    <!-- ScrollReveal js -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
