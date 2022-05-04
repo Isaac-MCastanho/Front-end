@@ -9,13 +9,15 @@
 <div align="center">
     <div align='left'>
         <br>
-    <span><b>Link do Site:</b></span> <a href='https://isaac-mcastanho.github.io/Front-end/advanced-project/wildBeast/'>Wildbeast</a>
+    <span><b>Link do Site:</b></span> <a target="_blank" href='https://isaac-mcastanho.github.io/Front-end/advanced-project/wildBeast/'>Wildbeast</a>
     </div>
 <h5>Desktop</h5>
-<img src="./assets/preview/preview-desktopPrint.png" alt="Foto de preview do site, versão desktop."/>
+<img src="./assets/preview/preview-desktopPrint.PNG" alt="Foto de preview do site, versão desktop."/>
 <h5>Mobile</h5>
-<img  src="./assets/preview/preview-mobile.png" alt="Foto de preview do site, versão mobile."/>
+<img  src="./assets/preview/preview-mobile.PNG" alt="Foto de preview do site, versão mobile."/>
 </div>
+
+
 
 
 
@@ -60,6 +62,12 @@ Vídeo:<a href="https://www.youtube.com/watch?v=hKXOVD2Yrj8">🐺 CSS Grid Layou
     As animações de scroll, foram feitas pensando no mobile, para melhorar a experiência do usuário, trazendo uma navegação mais limpa e uma leitura mais fácil e rápida.  <br><br>
     Não me preocupei em limitar essas funcionalidades apenas para o mobile, para que, quem ver o site, possa ver a animação de forma mais rápida.
 </p>Site original: <a href='https://origamid.com/projetos/wildbeast/#'>Wildbeast - Projeto CSS Grid Layout</a>
+
+
+#### 🔬Refatoração
+
+​	Achei melhor já refatorar e deixar o código de JS mais organizado, por mais pequeno que seja; Em breve farei a refatoração do css usando scss para não gerar muitos arquivos no index, oque poderia deixar o site mais lento.
+
 
 
 
