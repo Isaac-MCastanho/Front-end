@@ -68,6 +68,8 @@ Vídeo:<a href="https://www.youtube.com/watch?v=hKXOVD2Yrj8">🐺 CSS Grid Layou
 
 ​	Achei melhor já refatorar e deixar o código de JS mais organizado, por mais pequeno que seja; Em breve farei a refatoração do css usando scss para não gerar muitos arquivos no index, oque poderia deixar o site mais lento.
 
+​	A animação do header, de sumir e aparecer, ao dar scroll, agora esta limitado a dispositivos menores que 700px.
+
 
 
 
