@@ -1,0 +1,21 @@
+@media (max-width: 1200px) {
+  .estrutura {
+    grid-template-areas:
+      "header header header"
+      "sidenav content content"
+      "sidenav anuncios anuncios"
+      "footer footer footer";
+  }
+}
+
+@media (max-width: 750px) {
+  .estrutura {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header "
+      "sidenav "
+      "content "
+      "anuncios"
+      "footer";
+  }
+}

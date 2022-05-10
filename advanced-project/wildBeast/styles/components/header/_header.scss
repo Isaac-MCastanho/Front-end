@@ -1,0 +1,147 @@
+@import "animation";
+
+.header a,
+.header nav,
+.header a img,
+.header .toggleMobile {
+  position: relative;
+}
+
+.header {
+  grid-area: header;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  max-height: 100px;
+  overflow: hidden;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 200px;
+  top: -50%;
+  background: linear-gradient(135deg, #7e2cf8, #843af1, #b07dfb, #c7a1ff);
+  animation: fundoHeader 10s infinite ease-in;
+}
+
+.logo {
+  height: auto;
+}
+.logo img {
+  width: 200px;
+
+  transition: width 0.5s ease;
+}
+
+.header .toggleMobile {
+  width: 25px;
+  height: 25px;
+  display: none;
+  z-index: 3;
+  cursor: pointer;
+}
+.header .toggleMobile div,
+.header .toggleMobile::before,
+.header .toggleMobile::after {
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: white;
+  top: 50%;
+  position: absolute;
+  z-index: 3;
+
+  transition: all ease-in 0.3s;
+}
+
+// Nav do header
+
+.header nav ul {
+  display: flex;
+  gap: 15px;
+}
+.header nav ul li {
+  font-size: 1.1rem;
+  position: relative;
+  transition: font-size 0.5s ease;
+}
+.header nav ul li a {
+  color: white;
+  padding: 20px;
+  display: block;
+  text-transform: capitalize;
+  transition: color 0.5s;
+  text-align: center;
+}
+.header nav ul li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #4100a3;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.header nav ul li:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.header nav ul li:hover a {
+  color: #4100a3;
+}
+
+// Button mobile
+.header .toggleMobile::before {
+  content: "";
+  top: 10%;
+}
+.header .toggleMobile::after {
+  content: "";
+  top: 90%;
+}
+.header.show .toggleMobile div {
+  opacity: 0;
+  visibility: hidden;
+}
+.header.show .toggleMobile::before {
+  opacity: 1;
+  visibility: visible;
+  top: 50%;
+  transform: rotate(45deg);
+}
+.header.show .toggleMobile::after {
+  opacity: 1;
+  visibility: visible;
+  top: 50%;
+  transform: rotate(-45deg);
+}
+/* Efeitos do header */
+.header.headerShadow {
+  box-shadow: 0px 0px 20px 0px #843af1;
+  height: 65px;
+}
+.header.headerShadow a img {
+  width: 150px;
+}
+
+.header.headerShadow nav ul li {
+  font-size: 1rem;
+}
+
+.header.down {
+  opacity: 0;
+  height: 0;
+}
+
+@import "responsive";
