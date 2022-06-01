@@ -60,9 +60,9 @@ img {
   }
 }
 .header a,
-.header nav,
+.header .header__nav,
 .header a img,
-.header .toggleMobile {
+.header .header__toggleMobile {
   position: relative;
 }
 
@@ -92,48 +92,27 @@ img {
   animation: fundoHeader 10s infinite ease-in;
 }
 
-.logo {
+.header__logo {
   height: auto;
 }
 
-.logo img {
+.header__logo__img {
   width: 200px;
   transition: width 0.5s ease;
 }
 
-.header .toggleMobile {
-  width: 25px;
-  height: 25px;
-  display: none;
-  z-index: 3;
-  cursor: pointer;
-}
-
-.header .toggleMobile div,
-.header .toggleMobile::before,
-.header .toggleMobile::after {
-  width: 100%;
-  height: 2px;
-  border-radius: 2px;
-  background-color: white;
-  top: 50%;
-  position: absolute;
-  z-index: 3;
-  transition: all ease-in 0.3s;
-}
-
-.header nav ul {
+.header__nav__list {
   display: flex;
   gap: 15px;
 }
 
-.header nav ul li {
+.header__nav__list__item {
   font-size: 1.1rem;
   position: relative;
   transition: font-size 0.5s ease;
 }
 
-.header nav ul li a {
+.header__nav__list__item a {
   color: white;
   padding: 20px;
   display: block;
@@ -142,7 +121,7 @@ img {
   text-align: center;
 }
 
-.header nav ul li::before {
+.header__nav__list__item::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -154,38 +133,59 @@ img {
   transition: transform 0.5s;
 }
 
-.header nav ul li:hover::before {
+.header__nav__list__item:hover::before {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-.header nav ul li:hover a {
+.header__nav__list__item:hover a {
   color: #4100a3;
 }
 
-.header .toggleMobile::before {
+.header__toggleMobile {
+  width: 25px;
+  height: 25px;
+  display: none;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.header__toggleMobile__dash,
+.header__toggleMobile::before,
+.header__toggleMobile::after {
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: white;
+  top: 50%;
+  position: absolute;
+  z-index: 3;
+  transition: all ease-in 0.3s;
+}
+
+.header__toggleMobile::before {
   content: "";
   top: 10%;
 }
 
-.header .toggleMobile::after {
+.header__toggleMobile::after {
   content: "";
   top: 90%;
 }
 
-.header.show .toggleMobile div {
+.header--show .header__toggleMobile .header__toggleMobile__dash {
   opacity: 0;
   visibility: hidden;
 }
 
-.header.show .toggleMobile::before {
+.header--show .header__toggleMobile::before {
   opacity: 1;
   visibility: visible;
   top: 50%;
   transform: rotate(45deg);
 }
 
-.header.show .toggleMobile::after {
+.header--show .header__toggleMobile::after {
   opacity: 1;
   visibility: visible;
   top: 50%;
@@ -193,30 +193,30 @@ img {
 }
 
 /* Efeitos do header */
-.header.headerShadow {
+.header.header--minify {
   box-shadow: 0px 0px 20px 0px #843af1;
   height: 65px;
 }
 
-.header.headerShadow a img {
+.header.header--minify .header__logo__img {
   width: 150px;
 }
 
-.header.headerShadow nav ul li {
+.header.header--minify .header__nav__list__item {
   font-size: 1rem;
 }
 
-.header.down {
+.header.header--disappear {
   opacity: 0;
   height: 0;
 }
 
 @media (max-width: 600px) {
-  .header .toggleMobile {
+  .header .header__toggleMobile {
     display: block;
   }
 
-  .header nav {
+  .header .header__nav {
     position: fixed;
     visibility: hidden;
     opacity: 0;
@@ -230,24 +230,24 @@ img {
     transition: all ease 0.5s;
   }
 
-  .header nav ul {
+  .header--show .header__nav {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  .header__nav__list {
     margin: auto;
     flex-direction: column;
     gap: 30px;
   }
 
-  .header.headerShadow nav ul li {
+  .header.header--show .header__nav__list__item {
     font-size: 1.5rem;
   }
 
-  .header nav ul li {
+  .header__nav__list__item {
     font-size: 1.5rem;
-  }
-
-  .header.show nav {
-    opacity: 1;
-    visibility: visible;
-    top: 0;
   }
 }
 @keyframes seta {

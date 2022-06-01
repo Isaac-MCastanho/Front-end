@@ -1,9 +1,9 @@
 @media (max-width: 600px) {
-  .header .toggleMobile {
+  .header .header__toggleMobile {
     display: block;
   }
 
-  .header nav {
+  .header .header__nav {
     position: fixed;
     visibility: hidden;
     opacity: 0;
@@ -16,21 +16,20 @@
     justify-content: center;
     transition: all ease 0.5s;
   }
-  .header nav ul {
+  .header--show .header__nav {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+  .header__nav__list {
     margin: auto;
     flex-direction: column;
     gap: 30px;
   }
-  .header.headerShadow nav ul li {
+  .header.header--show .header__nav__list__item {
     font-size: 1.5rem;
   }
-  .header nav ul li {
+  .header__nav__list__item {
     font-size: 1.5rem;
-  }
-
-  .header.show nav {
-    opacity: 1;
-    visibility: visible;
-    top: 0;
   }
 }

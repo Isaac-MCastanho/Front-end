@@ -1,5 +1,5 @@
 let scrolled = document.documentElement.scrollTop;
-let menuToggle = document.querySelector(".toggleMobile");
+let menuToggle = document.querySelector(".header__toggleMobile");
 let header = document.querySelector(".header");
 
 // Events
@@ -9,30 +9,30 @@ document.addEventListener("scroll", (e) => {
 });
 
 menuToggle.addEventListener("click", () => {
-  header.classList.toggle("show");
+  header.classList.toggle("header--show");
 });
-document.querySelectorAll("header ul li").forEach((e) => {
+document.querySelectorAll(".header__nav__list__item").forEach((e) => {
   e.addEventListener("click", () => {
-    header.classList.remove("show");
+    header.classList.remove("header--show");
   });
 });
 
 // Method
 function minHeader() {
   window.scrollY > 50
-    ? header.classList.add("headerShadow")
-    : header.classList.remove("headerShadow");
+    ? header.classList.add("header--minify")
+    : header.classList.remove("header--minify");
 }
 
 function headerShow() {
-  if (header.classList.contains("show")) return;
+  if (header.classList.contains("header--show")) return;
   if (window.innerWidth > 700) return;
 
   if (window.scrollY > scrolled) {
-    header.classList.add("down");
+    header.classList.add("header--disappear");
     scrolled = window.scrollY;
   } else {
-    header.classList.remove("down");
+    header.classList.remove("header--disappear");
     scrolled = window.scrollY;
   }
 }
