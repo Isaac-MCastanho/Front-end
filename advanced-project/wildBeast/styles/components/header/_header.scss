@@ -1,12 +1,5 @@
 @import "animation";
 
-.header a,
-.header .header__nav,
-.header a img,
-.header .header__toggleMobile {
-  position: relative;
-}
-
 .header {
   grid-area: header;
   position: fixed;
@@ -21,129 +14,135 @@
   align-items: center;
   transition: all 0.5s ease;
   z-index: 1;
-}
-.header::before {
-  content: "";
-  position: absolute;
-  width: 150%;
-  height: 200px;
-  top: -50%;
-  background: linear-gradient(135deg, #7e2cf8, #843af1, #b07dfb, #c7a1ff);
-  animation: fundoHeader 10s infinite ease-in;
-}
 
-// Header Logo
-.header__logo {
-  height: auto;
-}
-.header__logo__img {
-  width: 200px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 200px;
+    top: -50%;
+    background: linear-gradient(135deg, #7e2cf8, #843af1, #b07dfb, #c7a1ff);
+    animation: fundoHeader 10s infinite ease-in;
+  }
 
-  transition: width 0.5s ease;
-}
+  // Header Logo
+  &__logo {
+    height: auto;
+    &__img {
+      width: 200px;
+      position: relative;
+      transition: width 0.5s ease;
+    }
+  }
 
-// Nav do header
+  // Nav do header
 
-.header__nav__list {
-  display: flex;
-  gap: 15px;
-}
-.header__nav__list__item {
-  font-size: 1.1rem;
-  position: relative;
-  transition: font-size 0.5s ease;
-}
-.header__nav__list__item a {
-  color: white;
-  padding: 20px;
-  display: block;
-  text-transform: capitalize;
-  transition: color 0.5s;
-  text-align: center;
-}
-.header__nav__list__item::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #4100a3;
+  &__nav__list {
+    display: flex;
+    gap: 15px;
+    &__item {
+      font-size: 1.1rem;
+      position: relative;
+      transition: font-size 0.5s ease;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #4100a3;
 
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.5s;
-}
-.header__nav__list__item:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-.header__nav__list__item:hover a {
-  color: #4100a3;
-}
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+      }
+      &:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+      & a {
+        color: white;
+        padding: 20px;
+        display: block;
+        text-transform: capitalize;
+        transition: color 0.5s;
+        text-align: center;
+      }
 
-// Button mobile
-.header__toggleMobile {
-  width: 25px;
-  height: 25px;
-  display: none;
-  z-index: 3;
-  cursor: pointer;
-}
-.header__toggleMobile__dash,
-.header__toggleMobile::before,
-.header__toggleMobile::after {
-  width: 100%;
-  height: 2px;
-  border-radius: 2px;
-  background-color: white;
-  top: 50%;
-  position: absolute;
-  z-index: 3;
+      &:hover a {
+        color: #4100a3;
+      }
+    }
+  }
+  // Button mobile
+  &__toggleMobile {
+    width: 25px;
+    height: 25px;
+    display: none;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
 
-  transition: all ease-in 0.3s;
-}
-.header__toggleMobile::before {
-  content: "";
-  top: 10%;
-}
-.header__toggleMobile::after {
-  content: "";
-  top: 90%;
-}
+    &__dash,
+    &::before,
+    &::after {
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+      background-color: white;
+      top: 50%;
+      position: absolute;
+      z-index: 3;
 
-// Efeito do Toggle Mobile
-.header--show .header__toggleMobile .header__toggleMobile__dash {
-  opacity: 0;
-  visibility: hidden;
-}
-.header--show .header__toggleMobile::before {
-  opacity: 1;
-  visibility: visible;
-  top: 50%;
-  transform: rotate(45deg);
-}
-.header--show .header__toggleMobile::after {
-  opacity: 1;
-  visibility: visible;
-  top: 50%;
-  transform: rotate(-45deg);
-}
-/* Efeitos do header */
-.header.header--minify {
-  box-shadow: 0px 0px 20px 0px #843af1;
-  height: 65px;
-}
-.header.header--minify .header__logo__img {
-  width: 150px;
-}
+      transition: all ease-in 0.3s;
+    }
+    &::before {
+      content: "";
+      top: 10%;
+    }
+    &::after {
+      content: "";
+      top: 90%;
+    }
+  }
+  // Efeito do Toggle Mobile
+  &--show .header__toggleMobile {
+    & .header__toggleMobile__dash {
+      opacity: 0;
+      visibility: hidden;
+    }
+    &::before {
+      opacity: 1;
+      visibility: visible;
+      top: 50%;
+      transform: rotate(45deg);
+    }
+    &::after {
+      opacity: 1;
+      visibility: visible;
+      top: 50%;
+      transform: rotate(-45deg);
+    }
+  }
 
-.header.header--minify .header__nav__list__item {
-  font-size: 1rem;
-}
+  /* Efeitos do header */
+  &--minify {
+    box-shadow: 0px 0px 20px 0px #843af1;
+    height: 65px;
 
-.header.header--disappear {
-  opacity: 0;
-  height: 0;
+    & .header__logo__img {
+      width: 150px;
+    }
+
+    & .header__nav__list__item {
+      font-size: 1rem;
+    }
+  }
+
+  &--disappear {
+    opacity: 0;
+    height: 0;
+  }
 }
 
 @import "responsive";
