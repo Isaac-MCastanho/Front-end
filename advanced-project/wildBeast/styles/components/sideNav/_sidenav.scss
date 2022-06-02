@@ -4,22 +4,22 @@
   grid-area: sidenav;
   background: #fafbfc;
   padding: 30px;
-}
 
-.sidenav li a {
-  display: block;
-  min-width: 60px;
-  max-width: 150px;
-  margin: 0 auto 30px auto;
-  background: white;
-  padding: 20px;
-  border-radius: var(--borderRadius);
-  text-align: center;
-  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.14);
-  transition: background 0.2s ease;
-}
-.sidenav li a:hover {
-  background: #b07dfb;
+  &__list__item a {
+    display: block;
+    min-width: 60px;
+    max-width: 150px;
+    margin: 0 auto 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: var(--borderRadius);
+    text-align: center;
+    box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.14);
+    transition: background 0.2s ease;
+    &:hover {
+      background: #b07dfb;
+    }
+  }
 }
 
 @import "responsive";
