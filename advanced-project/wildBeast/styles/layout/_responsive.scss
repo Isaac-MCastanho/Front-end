@@ -1,5 +1,5 @@
 @media (max-width: 1200px) {
-  .estrutura {
+  .structure {
     grid-template-areas:
       "header header header"
       "sidenav content content"
@@ -9,7 +9,7 @@
 }
 
 @media (max-width: 750px) {
-  .estrutura {
+  .structure {
     grid-template-columns: 1fr;
     grid-template-areas:
       "header "

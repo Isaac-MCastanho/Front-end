@@ -1,11 +1,12 @@
 @media (max-width: 600px) {
   .content {
     grid-template-columns: auto;
-  }
-  .caracteristicas {
-    justify-content: center;
-  }
-  .destaq {
-    margin: 0 auto;
+
+    &__contrast {
+      margin: 0 auto;
+    }
+    .particulars {
+      justify-content: center;
+    }
   }
 }

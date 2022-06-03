@@ -30,7 +30,7 @@ img {
   --borderRadius: 5px;
 }
 
-.estrutura {
+.structure {
   display: grid;
   grid-template-columns: minmax(160px, 1fr) 3fr 300px;
   grid-template-areas: "header header header" "sidenav content anuncios" "footer footer footer";
@@ -38,12 +38,12 @@ img {
 }
 
 @media (max-width: 1200px) {
-  .estrutura {
+  .structure {
     grid-template-areas: "header header header" "sidenav content content" "sidenav anuncios anuncios" "footer footer footer";
   }
 }
 @media (max-width: 750px) {
-  .estrutura {
+  .structure {
     grid-template-columns: 1fr;
     grid-template-areas: "header " "sidenav " "content " "anuncios" "footer";
   }
@@ -104,13 +104,13 @@ img {
 .header__nav__list__item::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -17px;
   width: 100%;
   height: 2px;
   background-color: #4100a3;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 0.5s;
+  transition: transform 0.5s, bottom 0.5s;
 }
 .header__nav__list__item:hover::before {
   transform: scaleX(1);
@@ -178,6 +178,9 @@ img {
 }
 .header--minify .header__nav__list__item {
   font-size: 1rem;
+}
+.header--minify .header__nav__list__item::before {
+  bottom: -1px;
 }
 .header--disappear {
   opacity: 0;
@@ -284,60 +287,38 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  /*particulars (caracteristicas) */
 }
-
 .content img {
   border-radius: var(--borderRadius);
 }
-
-.col-wide {
-  grid-column: 1/-1;
-}
-
-.image-1 {
-  grid-row: span 2;
-  align-self: end;
-}
-
-.image-2 {
-  align-self: end;
-}
-
-/* estilos do content */
-p {
+.content p {
   font-size: 1.2rem;
   line-height: 1.6;
   letter-spacing: -0.006rem;
   color: rgba(0, 0, 0, 0.8);
 }
-
-.informacoes p + p {
+.content__image-1 {
+  grid-row: span 2;
+  align-self: end;
+}
+.content__image-2 {
+  align-self: end;
+}
+.content .content__contrast {
+  font-size: 0.975rem;
+  color: #b07dfb;
+  max-width: 16rem;
+}
+.content__information p + p {
   margin-top: 30px;
 }
-
-.titulo {
-  color: #b07dfb;
-}
-
-.titulo h1 {
-  font-size: 3.75rem;
-  line-height: 1;
-  font-weight: 700;
-}
-
-.titulo span {
-  font-size: 0.975rem;
-  font-style: italic;
-}
-
-/* caracteristicas */
-.caracteristicas {
+.content .particulars {
   display: flex;
   gap: 30px;
   align-items: flex-start;
 }
-
-.caracteristicas > div {
+.content .particulars__box {
   width: 80px;
   text-align: center;
   border-radius: var(--borderRadius);
@@ -346,34 +327,42 @@ p {
   position: relative;
   z-index: -1;
 }
-
-.caracteristicas span {
+.content .particulars__box span {
   display: block;
   color: #b07dfb;
 }
-
-.numero {
+.content .particulars__box__number {
   font-size: 3rem;
   line-height: 1;
   margin: 10px auto;
 }
-
-.rotulo {
+.content .particulars__box__label {
   background: white;
   border-radius: 0 0 var(--borderRadius) var(--borderRadius);
   padding: 5px 0;
   position: relative;
   top: 2px;
 }
-
-.destaq {
-  font-size: 0.975rem;
-  color: #b07dfb;
-  max-width: 16rem;
+.content--col-wide {
+  grid-column: 1/-1;
 }
 
-.citacao,
-.atributos {
+.title-container {
+  color: #b07dfb;
+}
+.title-container__title {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+}
+.title-container__subtitle {
+  font-size: 0.975rem;
+  font-style: italic;
+}
+
+/* citation and attributes */
+.citation,
+.attributes {
   align-self: flex-start;
   padding: 30px;
   border-radius: var(--borderRadius);
@@ -381,7 +370,7 @@ p {
   background: linear-gradient(135deg, #8844ee, #b07dfb);
 }
 
-.citacao p {
+.citation .citation__paragraph {
   font-size: 1.5rem;
   font-style: italic;
   color: white;
@@ -390,15 +379,14 @@ p {
   margin: 0 auto;
 }
 
-.atributos li {
+.attributes__line {
   color: white;
   font-family: Courier, monospace;
   font-size: 1.125rem;
   padding: 15px;
   border-bottom: 2px solid #b07dfb;
 }
-
-.atributos li:last-child {
+.attributes__line:last-child {
   border: 0;
 }
 
@@ -406,13 +394,11 @@ p {
   .content {
     grid-template-columns: auto;
   }
-
-  .caracteristicas {
-    justify-content: center;
-  }
-
-  .destaq {
+  .content__contrast {
     margin: 0 auto;
+  }
+  .content .particulars {
+    justify-content: center;
   }
 }
 .anuncios {
