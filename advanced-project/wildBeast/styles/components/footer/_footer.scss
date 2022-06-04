@@ -1,9 +1,9 @@
-footer {
+.footer {
   grid-area: footer;
   background: linear-gradient(135deg, #7e2cf8, #843af1, #b07dfb, #c7a1ff);
-}
-footer p {
-  color: white;
-  text-align: center;
-  padding: 30px;
+  &__content {
+    color: white;
+    text-align: center;
+    padding: 30px;
+  }
 }
