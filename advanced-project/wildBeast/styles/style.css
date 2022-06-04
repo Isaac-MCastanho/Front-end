@@ -33,19 +33,59 @@ img {
 .structure {
   display: grid;
   grid-template-columns: minmax(160px, 1fr) 3fr 300px;
-  grid-template-areas: "header header header" "sidenav content anuncios" "footer footer footer";
+  grid-template-areas: "header header header" "sidenav content adverts" "footer footer footer";
   padding-top: 100px;
+}
+
+.title-container {
+  color: #b07dfb;
+}
+.title-container__title {
+  line-height: 1;
+  font-weight: 700;
+  line-height: 1;
+  font-weight: 700;
+}
+.title-container__title--big {
+  line-height: 1;
+  font-weight: 700;
+  font-size: 3.75rem;
+}
+.title-container__title--medium {
+  font-size: 2.75rem;
+}
+.title-container__subtitle {
+  font-style: italic;
+}
+.title-container__subtitle--big {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+.title-container__subtitle--medium {
+  font-style: italic;
+  font-size: 0.975rem;
 }
 
 @media (max-width: 1200px) {
   .structure {
-    grid-template-areas: "header header header" "sidenav content content" "sidenav anuncios anuncios" "footer footer footer";
+    grid-template-areas: "header header header" "sidenav content content" "sidenav adverts adverts" "footer footer footer";
   }
 }
 @media (max-width: 750px) {
   .structure {
     grid-template-columns: 1fr;
-    grid-template-areas: "header " "sidenav " "content " "anuncios" "footer";
+    grid-template-areas: "header " "sidenav " "content " "adverts" "footer";
+  }
+}
+@media (max-width: 400px) {
+  .title-container {
+    color: #b07dfb;
+  }
+  .title-container__title--big {
+    font-size: 2.75rem;
+  }
+  .title-container__subtitle--big {
+    font-size: 0.975rem;
   }
 }
 @keyframes fundoHeader {
@@ -347,19 +387,6 @@ img {
   grid-column: 1/-1;
 }
 
-.title-container {
-  color: #b07dfb;
-}
-.title-container__title {
-  font-size: 3.75rem;
-  line-height: 1;
-  font-weight: 700;
-}
-.title-container__subtitle {
-  font-size: 0.975rem;
-  font-style: italic;
-}
-
 /* citation and attributes */
 .citation,
 .attributes {
@@ -401,19 +428,62 @@ img {
     justify-content: center;
   }
 }
-.anuncios {
-  grid-area: anuncios;
+.adverts {
+  grid-area: adverts;
   background: #fafbfc;
   display: grid;
   align-content: start;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(1, 1fr);
   padding: 30px;
   gap: 30px;
 }
-
-.anuncios .anuncio-item img {
-  width: 100%;
+.adverts__content {
+  display: grid;
+  align-content: start;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+}
+.adverts .title-container {
+  grid-column: 1/-1;
+}
+.adverts__item {
+  cursor: pointer;
   border-radius: var(--borderRadius);
+  overflow: hidden;
+}
+.adverts__item__link {
+  position: relative;
+  color: #b07dfb;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.adverts__item__link::before {
+  content: "Saiba mais!";
+  color: #b07dfb;
+  font-size: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.5s;
+}
+.adverts__item__link:hover::before {
+  font-size: 1.2rem;
+  opacity: 1;
+  visibility: visible;
+}
+.adverts__item img {
+  width: 100%;
 }
 
 footer {

@@ -3,7 +3,7 @@
     grid-template-areas:
       "header header header"
       "sidenav content content"
-      "sidenav anuncios anuncios"
+      "sidenav adverts adverts"
       "footer footer footer";
   }
 }
@@ -15,7 +15,24 @@
       "header "
       "sidenav "
       "content "
-      "anuncios"
+      "adverts"
       "footer";
+  }
+}
+@media (max-width: 400px) {
+  // Title
+  .title-container {
+    color: #b07dfb;
+    &__title {
+      &--big {
+        font-size: 2.75rem;
+      }
+    }
+
+    &__subtitle {
+      &--big {
+        font-size: 0.975rem;
+      }
+    }
   }
 }
