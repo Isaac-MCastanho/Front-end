@@ -8,13 +8,13 @@
   gap: 30px;
 
   & img {
-    border-radius: var(--borderRadius);
+    border-radius: $border-radius;
   }
   & p {
     font-size: 1.2rem;
     line-height: 1.6;
     letter-spacing: -0.006rem;
-    color: rgba(0, 0, 0, 0.8);
+    color: $primary-color;
   }
 
   &__image-1 {
@@ -26,7 +26,7 @@
   }
   & &__contrast {
     font-size: 0.975rem;
-    color: #b07dfb;
+    color: $secondary-color;
     max-width: 16rem;
   }
 
@@ -42,14 +42,14 @@
     &__box {
       width: 80px;
       text-align: center;
-      border-radius: var(--borderRadius);
-      background: linear-gradient(135deg, #8844ee, #b07dfb);
-      box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+      border-radius: $border-radius;
+      background: $gradient-static;
+      box-shadow: $shadow-primary;
       position: relative;
       z-index: -1;
       & span {
         display: block;
-        color: #b07dfb;
+        color: $secondary-color;
       }
       &__number {
         font-size: 3rem;
@@ -57,8 +57,8 @@
         margin: 10px auto;
       }
       &__label {
-        background: white;
-        border-radius: 0 0 var(--borderRadius) var(--borderRadius);
+        background: $white-color;
+        border-radius: 0 0 $border-radius $border-radius;
         padding: 5px 0;
         position: relative;
         top: 2px;
@@ -78,16 +78,16 @@
 .attributes {
   align-self: flex-start;
   padding: 30px;
-  border-radius: var(--borderRadius);
-  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
-  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  border-radius: $border-radius;
+  box-shadow: $shadow-primary;
+  background: $gradient-static;
 }
 
 .citation {
   & &__paragraph {
     font-size: 1.5rem;
     font-style: italic;
-    color: white;
+    color: $white-color;
     text-align: center;
     max-width: 500px;
     margin: 0 auto;
@@ -96,11 +96,11 @@
 
 .attributes {
   &__line {
-    color: white;
+    color: $white-color;
     font-family: Courier, monospace;
     font-size: 1.125rem;
     padding: 15px;
-    border-bottom: 2px solid #b07dfb;
+    border-bottom: 2px solid $secondary-color;
 
     &:last-child {
       border: 0;

@@ -1,6 +1,6 @@
 .adverts {
   grid-area: adverts;
-  background: #fafbfc;
+  background: $background-secondary;
   display: grid;
   align-content: start;
   grid-template-columns: repeat(1, 1fr);
@@ -20,11 +20,10 @@
 
   &__item {
     cursor: pointer;
-    border-radius: var(--borderRadius);
+    border-radius: $border-radius;
     overflow: hidden;
     &__link {
       position: relative;
-      color: #b07dfb;
       font-size: 1.2rem;
       display: flex;
       justify-content: center;
@@ -34,7 +33,7 @@
 
       &::before {
         content: "Saiba mais!";
-        color: #b07dfb;
+        color: $primary-hover-color;
         font-size: 0.5rem;
         display: flex;
         justify-content: center;
@@ -45,7 +44,7 @@
         opacity: 0;
         visibility: hidden;
         position: absolute;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: $adverts-hover-background;
         transition: all 0.5s;
       }
       &:hover::before {

@@ -11,30 +11,24 @@
 
 // Title
 .title-container {
-  color: #b07dfb;
+  color: $secondary-color;
   &__title {
     line-height: 1;
     font-weight: 700;
-    &--big {
-      line-height: 1;
-      font-weight: 700;
+    &.title--big {
       font-size: 3.75rem;
     }
-    line-height: 1;
-    font-weight: 700;
-    &--medium {
+    &.title--medium {
       font-size: 2.75rem;
     }
   }
   &__subtitle {
     font-style: italic;
 
-    &--big {
-      font-style: italic;
+    &.subtitle--big {
       font-size: 1.2rem;
     }
-    &--medium {
-      font-style: italic;
+    &.subtitle--medium {
       font-size: 0.975rem;
     }
   }

@@ -21,7 +21,7 @@
     width: 150%;
     height: 200px;
     top: -50%;
-    background: linear-gradient(135deg, #7e2cf8, #843af1, #b07dfb, #c7a1ff);
+    background: $gradient-animation;
     animation: fundoHeader 10s infinite ease-in;
   }
 
@@ -50,7 +50,7 @@
         bottom: -17px;
         width: 100%;
         height: 2px;
-        background-color: #4100a3;
+        background-color: $header-hover-color;
 
         transform: scaleX(0);
         transform-origin: right;
@@ -61,7 +61,7 @@
         transform-origin: left;
       }
       & a {
-        color: white;
+        color: $white-color;
         padding: 20px;
         display: block;
         text-transform: capitalize;
@@ -70,7 +70,7 @@
       }
 
       &:hover a {
-        color: #4100a3;
+        color: $header-hover-color;
       }
     }
   }
@@ -89,7 +89,7 @@
       width: 100%;
       height: 2px;
       border-radius: 2px;
-      background-color: white;
+      background-color: $toggleMenu-color;
       top: 50%;
       position: absolute;
       z-index: 3;
@@ -127,7 +127,7 @@
 
   /* Efeitos do header */
   &--minify {
-    box-shadow: 0px 0px 20px 0px #843af1;
+    box-shadow: $shadow-secondary;
     height: 65px;
 
     & .header__logo__img {

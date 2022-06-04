@@ -1,3 +1,33 @@
-:root {
-  --borderRadius: 5px;
-}
+// colors texts
+$primary-color: rgba(0, 0, 0, 0.8);
+$secondary-color: #b07dfb;
+$white-color: #fff;
+// backgrounds
+$background-secondary: #fafbfc;
+
+// hovers
+$primary-hover-color: #b07dfb;
+$header-hover-color: #4100a3;
+$adverts-hover-background: rgba(0, 0, 0, 0.8);
+
+// gradients
+$gradient-static: linear-gradient(135deg, #8844ee, #b07dfb);
+$gradient-animation: linear-gradient(
+  135deg,
+  #7e2cf8,
+  #843af1,
+  #b07dfb,
+  #c7a1ff
+);
+
+// shadow
+$color-shadow-primary: rgba(44, 44, 44, 0.14);
+$color-shadow-secondary: #b07dfb;
+$shadow-primary: 5px 5px 15px 0px $color-shadow-primary;
+$shadow-secondary: 0px 0px 20px 0px $color-shadow-secondary;
+
+// ToggleMenu
+$toggleMenu-color: #fff;
+
+// sizes
+$border-radius: 5px;

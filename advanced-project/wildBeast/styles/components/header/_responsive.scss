@@ -12,7 +12,7 @@
       width: 100%;
       top: -10rem;
       left: 0;
-      background: linear-gradient(135deg, #7e2cf8, #843af1, #b07dfb, #c7a1ff);
+      background: $gradient-animation;
       display: flex;
       justify-content: center;
       transition: all ease 0.5s;
