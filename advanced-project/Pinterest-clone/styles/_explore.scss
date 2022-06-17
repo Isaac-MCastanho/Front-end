@@ -1,13 +1,13 @@
 .explore {
   position: fixed;
-  bottom: -100vh;
+  top: calc(100vh - 50px);
   left: 0;
 
   display: flex;
   visibility: visible;
   opacity: 1;
   width: 100%;
-  height: 110%;
+  height: calc(100% + 50px);
   background: rgb(255, 253, 146);
   transition: all ease 1s;
 
@@ -255,6 +255,6 @@
   }
 
   &--show {
-    bottom: 0;
+    top: -50px;
   }
 }
