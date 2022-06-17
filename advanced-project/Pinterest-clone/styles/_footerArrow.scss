@@ -1,0 +1,41 @@
+.footer {
+  width: 100%;
+  height: 300px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(0deg, #ffffff 20%, transparent);
+  transition: all ease 0.5s;
+
+  &.footer-disappear {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.footer--arrowButton {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 100%;
+  background: $red;
+  transform: translateY(170px);
+  cursor: pointer;
+  animation: animate-button 1s infinite alternate ease-in-out;
+
+  > i {
+    font-size: 35px;
+    color: #ffffff;
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes animate-button {
+  to {
+    transform: translateY(140px);
+  }
+}
