@@ -142,7 +142,8 @@ header {
 
         flex-direction: column;
         ul {
-          margin-top: 30vh;
+          flex: 1;
+          justify-content: end;
           flex-direction: column;
           align-items: center;
           font-size: 30px;

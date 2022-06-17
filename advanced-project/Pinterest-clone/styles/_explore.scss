@@ -1,6 +1,6 @@
 .explore {
   position: fixed;
-  top: 95vh;
+  bottom: -100vh;
   left: 0;
 
   display: flex;
@@ -221,6 +221,7 @@
 
     @media (max-width: 830px) {
       & {
+        padding: 0;
         height: 88%;
         bottom: -8%;
         flex-direction: column;
@@ -231,7 +232,10 @@
         }
 
         &__heading {
-          padding: 70px 0 0 0;
+          z-index: 2;
+          background: #fffd92;
+          width: 100%;
+          padding: 0 20px;
         }
       }
     }
@@ -251,6 +255,6 @@
   }
 
   &--show {
-    top: -60px;
+    bottom: 0;
   }
 }
