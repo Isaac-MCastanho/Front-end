@@ -21,6 +21,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 .burger {
@@ -30,12 +31,15 @@ html {
   top: 4rem;
   right: 4rem;
   cursor: pointer;
-  z-index: 1;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   transition: right 0.5s;
+}
+img {
+  width: 100%;
 }
 
 .burger.burger--close {
@@ -159,7 +163,7 @@ header {
 .heading-container__button {
   font-family: var(--font-action);
   color: #fff;
-  background: #7f00ff;
+  /* background: #7f00ff; */
   letter-spacing: 0.16rem;
   background: -webkit-linear-gradient(to right, #9600aa, #7b00c2);
   background: linear-gradient(to right, #9600aa, #7b00c2);
@@ -200,6 +204,7 @@ header {
   flex-direction: column;
   transition: right 0.5s, box-shadow 2s;
   box-shadow: none;
+  z-index: 1;
 }
 
 .sidebar.sidebar--showMenu {
@@ -282,7 +287,7 @@ header {
 .sessao-conhecimentos__container {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(6, 6rem);
+  grid-template-rows: repeat(6, 9.6rem);
   row-gap: 2rem;
 }
 
@@ -346,8 +351,104 @@ header {
   grid-row: 1/6;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 .conhecimentos-img-wrapper img {
   object-fit: cover;
   width: 100%;
+}
+
+/* Secession projects */
+
+.sessao-projetos__container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 20px;
+  gap: 40px;
+  flex-flow: wrap;
+}
+.card-project {
+  width: 28.8rem;
+  height: 40rem;
+  position: relative;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.card-project__img-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+.card-project__img-wrapper img {
+  object-fit: cover;
+  height: 100%;
+  transition: opacity ease 0.5s;
+  opacity: 0.8;
+}
+.card-project:hover .card-project__img-wrapper img {
+  opacity: 0.5;
+}
+
+.card-project:hover .card-project__info {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+.card-project__info {
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 3.2rem;
+  text-shadow: 0 1.6px 4.8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  transform: translateY(80px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease 0.3s;
+}
+
+.card-project__info__title {
+  font-family: var(--font-secondary);
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #eee;
+  margin-bottom: 10px;
+}
+.card-project__info__subtitle {
+  margin-bottom: 10px;
+  font-family: var(--font-action);
+  font-weight: bolder;
+  color: #ff4081;
+}
+.card-project__info__text {
+  margin-bottom: 20px;
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  color: #eee;
+  text-align: justify;
+}
+.card-project__info__button {
+  /* width: auto; */
+  width: 14rem;
+  height: 4rem;
+  background: -webkit-linear-gradient(to right, #9600aa, #7b00c2);
+  background: linear-gradient(to right, #9600aa, #7b00c2);
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: var(--font-action);
+  color: #eee;
+  font-size: 1.2rem;
+  letter-spacing: 0.16rem;
+  text-transform: uppercase;
+  padding: 0.8rem 2.4rem;
+  transition: letter-spacing ease 0.2s, width ease 0.2s;
+}
+
+.card-project__info__button:hover {
+  letter-spacing: 0.4rem;
+  width: 18rem;
 }

@@ -10,21 +10,21 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/assets/icons/apple-touch-icon.png"
+      href="./assets/icons/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/assets/icons/favicon-32x32.png"
+      href="./assets/icons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/assets/icons/favicon-16x16.png"
+      href="./assets/icons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="./site.webmanifest" />
     <!-- Meta Tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -32,7 +32,7 @@
     <title>Portfólio</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
   </head>
   <body>
     <div class="container">
@@ -46,19 +46,19 @@
         <div class="img-wrapper">
           <picture>
             <source
-              srcset="/assets/img/bg-menu-small.jpg"
+              srcset="./assets/img/bg-menu-small.jpg"
               media="(max-width: 600px)"
             />
             <source
-              srcset="/assets/img/bg-menu-medium.jpg"
+              srcset="./assets/img/bg-menu-medium.jpg"
               media="(max-width: 1900px)"
             />
             <source
-              srcset="/assets/img/bg-menu-big.jpg"
+              srcset="./assets/img/bg-menu-big.jpg"
               media="(max-width: 3000px)"
             />
             <img
-              srcset="/assets/img/bg-menu-small.jpg"
+              srcset="./assets/img/bg-menu-small.jpg"
               alt="Imagem com dois computadores e um teclado."
             />
           </picture>
@@ -200,6 +200,74 @@
               src="./assets/img/conhecimentos.png"
               alt="Imagem ilustrativa em animaçao de uma sala de aula"
             />
+          </div>
+        </div>
+      </section>
+
+      <section class="sessao-projetos">
+        <div class="session-heading">
+          <h1 class="session-heading__title">Projetos</h1>
+        </div>
+
+        <div class="sessao-projetos__container">
+          <div class="card-project">
+            <div class="card-project__img-wrapper">
+              <img
+                src="./assets/img/proj1.jpg"
+                alt="mesa com teclado, monitor e alguns post its"
+              />
+            </div>
+            <div class="card-project__info">
+              <h2 class="card-project__info__title">ToDo List</h2>
+              <h3 class="card-project__info__subtitle">Javascript</h3>
+              <p class="card-project__info__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit, velit earum suscipit modi eius deserunt
+                voluptatem eum ipsam ut, quas veritatis iusto asperiores
+                consequuntur, consectetur similique qui pariatur voluptas illo?
+              </p>
+              <button class="card-project__info__button">Saiba mais</button>
+            </div>
+          </div>
+
+          <div class="card-project">
+            <div class="card-project__img-wrapper">
+              <img
+                src="./assets/img/proj2.jpg"
+                alt="dois homens programando em notebooks"
+              />
+            </div>
+            <div class="card-project__info">
+              <h2 class="card-project__info__title">Maratona</h2>
+              <h3 class="card-project__info__subtitle">HTML, CSS</h3>
+              <p class="card-project__info__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Excepturi suscipit veniam aperiam ipsam earum consequatur
+                perspiciatis cupiditate quia optio eos quae cumque, numquam aut
+                explicabo molestias unde officiis quaerat nemo!
+              </p>
+              <button class="card-project__info__button">Saiba mais</button>
+            </div>
+          </div>
+
+          <div class="card-project">
+            <div class="card-project__img-wrapper">
+              <img
+                src="./assets/img/proj3.jpg"
+                alt="quarto com iluminação neon, e um travesseiro em um encosto."
+              />
+            </div>
+            <div class="card-project__info">
+              <h2 class="card-project__info__title">Casa Bela</h2>
+              <h3 class="card-project__info__subtitle">HTML</h3>
+              <p class="card-project__info__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                beatae corrupti itaque voluptatem repellat quae dolores rem quos
+                accusantium harum, fuga quibusdam quisquam dolorum! Saepe error
+                laboriosam quos pariatur aliquam.
+              </p>
+              <button class="card-project__info__button">Saiba mais</button>
+            </div>
           </div>
         </div>
       </section>
