@@ -302,6 +302,34 @@
           </div>
         </div>
       </section>
+
+      <section class="section-budget">
+        <div class="budget-wrapper">
+          <h1 class="session-heading__title">Faça um orçamento</h1>
+          <form action="">
+            <label for="input-qtde">Qtde de Páginas</label>
+            <input type="number" min="1" max="20" id="input-qtde" name="qtde" />
+
+            <label for="input-js">Preciso de um script JS</label>
+            <input type="checkbox" id="input-js" name="js" />
+
+            <label for="">Layout</label>
+            <div class="group-layout">
+              <div>
+                <input type="radio" name="layout" id="layout-sim" />
+                <label for="layout-sim">Preciso de um layout</label>
+              </div>
+              <div>
+                <input type="radio" name="layout" id="layout-nao" />
+                <label for="layout-nao">Já tenho um layout</label>
+              </div>
+            </div>
+            <label for="input-prazo">Prazo</label>
+            <input type="range" name="prazo" id="layout-prazo" />
+            <button type="submit" class="btn btn-budget">Enviar</button>
+          </form>
+        </div>
+      </section>
     </div>
 
     <script src="./assets/scripts/script.js"></script>
