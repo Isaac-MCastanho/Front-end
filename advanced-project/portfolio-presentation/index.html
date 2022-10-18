@@ -42,7 +42,7 @@
         <div class="burger__line"></div>
         <span>Fechar</span>
       </div>
-      <header>
+      <header id="header">
         <div class="img-wrapper">
           <picture>
             <source
@@ -77,19 +77,21 @@
         <nav class="sidebar__nav">
           <ul class="menu">
             <li class="menu__item">
-              <a href="#" class="menu__item__link">Home</a>
+              <a href="#header" class="menu__item__link">Home</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__item__link">Conhecimento</a>
+              <a href="#conhecimentos" class="menu__item__link"
+                >Conhecimentos</a
+              >
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__item__link">Projetos</a>
+              <a href="#projetos" class="menu__item__link">Projetos</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__item__link">Contato</a>
+              <a href="#contact" class="menu__item__link">Contato</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__item__link">Orçamento</a>
+              <a href="#budget" class="menu__item__link">Orçamento</a>
             </li>
           </ul>
         </nav>
@@ -100,7 +102,7 @@
         </div>
       </aside>
 
-      <section class="sessao-conhecimentos">
+      <section class="sessao-conhecimentos" id="conhecimentos">
         <div class="session-heading">
           <h1 class="session-heading__title">Conhecimentos</h1>
         </div>
@@ -204,7 +206,7 @@
         </div>
       </section>
 
-      <section class="sessao-projetos">
+      <section class="sessao-projetos" id="projetos">
         <div class="session-heading">
           <h1 class="session-heading__title">Projetos</h1>
         </div>
@@ -272,7 +274,7 @@
         </div>
       </section>
 
-      <section class="session-contact">
+      <section class="session-contact" id="contact">
         <div class="session-contact__wrapper">
           <div class="session-contact__wrapper__left"></div>
           <div class="session-contact__wrapper__right">
@@ -303,7 +305,7 @@
         </div>
       </section>
 
-      <section class="section-budget">
+      <section class="section-budget" id="budget">
         <div class="budget-wrapper">
           <h1 class="session-heading__title">Faça um orçamento</h1>
           <form action="">
@@ -330,6 +332,30 @@
           </form>
         </div>
       </section>
+
+      <footer>
+        <div class="footer-content">
+          <p>Copyright &copy: 2020, ETECIA DS - Todos os direitos reservados</p>
+          <div class="footer-content__social-list">
+            <ul>
+              <li>
+                <a href=""><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <a href="#header" id="link-topo">
+        <i class="fas fa-arrow-up"></i>
+      </a>
     </div>
 
     <script src="./assets/scripts/script.js"></script>
