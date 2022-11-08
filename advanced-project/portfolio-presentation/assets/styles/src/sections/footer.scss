@@ -1,0 +1,34 @@
+/* Rodape */
+
+footer {
+  width: 100%;
+  height: 16rem;
+  background-color: #17181b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content p {
+  font-family: var(--font-secondary);
+  color: #a7a7a7;
+  font-size: 1.92rem;
+}
+
+.footer-content__social-list a {
+  margin: 0 3.2rem;
+  color: #a7a7a7;
+}
+.footer-content__social-list a i {
+  font-size: 2.08rem;
+}
+
+.footer-content__social-list ul {
+  display: flex;
+}
