@@ -13,6 +13,18 @@
   position: relative;
   border-radius: 0.8rem;
   overflow: hidden;
+
+  @media (max-width: 1000px) {
+    & .card-project__img-wrapper img {
+      opacity: 0.5;
+    }
+
+    & .card-project__info {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }
 
 .card-project__img-wrapper {
@@ -71,7 +83,6 @@
   text-align: justify;
 }
 .card-project__info__button {
-  /* width: auto; */
   width: 14rem;
   height: 4rem;
   background: -webkit-linear-gradient(to right, #9600aa, #7b00c2);

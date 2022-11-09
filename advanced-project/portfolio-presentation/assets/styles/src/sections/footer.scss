@@ -13,12 +13,27 @@ footer {
   width: 60%;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 650px) {
+    width: 100%;
+  }
+  @media (max-width: 450px) {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .footer-content p {
   font-family: var(--font-secondary);
   color: #a7a7a7;
   font-size: 1.92rem;
+
+  @media (max-width: 450px) {
+    text-align: center;
+    line-height: 3rem;
+  }
 }
 
 .footer-content__social-list a {

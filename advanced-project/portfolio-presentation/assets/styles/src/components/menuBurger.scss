@@ -1,0 +1,85 @@
+.burger {
+  width: 3.5rem;
+  height: 2.5rem;
+  position: fixed;
+  top: 4rem;
+  right: 4rem;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: right 0.5s;
+
+  @media (max-width: 450px) {
+    right: none;
+    left: 4rem;
+  }
+}
+
+.burger.burger--close {
+  right: 26rem;
+
+  @media (max-width: 450px) {
+    right: none;
+    left: 4rem;
+  }
+}
+
+.burger__line {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #9600aa, #7b00c2);
+  /* box-shadow: 0.1rem 0.1rem 1px #000; */
+  box-shadow: 0.3rem 0.3rem 3px #000;
+  transition: all 1s;
+}
+
+.burger.burger--close .burger__line {
+  box-shadow: none;
+}
+.burger.burger--close .burger__line:nth-child(1) {
+  transform: translateY(11px) rotate(224deg);
+}
+.burger.burger--close .burger__line:nth-child(2) {
+  opacity: 0;
+  visibility: hidden;
+  width: 0%;
+}
+.burger.burger--close .burger__line:nth-child(3) {
+  transform: translateY(-12px) rotate(-224deg);
+}
+
+.burger span {
+  position: absolute;
+  top: -4px;
+  left: 3.8rem;
+  opacity: 0;
+  visibility: hidden;
+  height: 3.2rem;
+  width: 9.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #a044ff;
+  color: #fff;
+  font-family: var(--font-action);
+  transition: all 0.5s;
+}
+
+.burger.burger--close:hover span {
+  left: 4.8rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+.burger span::before {
+  content: "";
+  position: absolute;
+  border-right: 0.8rem solid #a044ff;
+  border-top: 0.8rem solid transparent;
+  border-left: 0.8rem solid transparent;
+  border-bottom: 0.8rem solid transparent;
+  left: -1.6rem;
+}

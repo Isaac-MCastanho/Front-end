@@ -6,6 +6,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 650px) {
+    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
+      url(../img/contato.jpg);
+    background-size: cover;
+  }
 }
 
 .session-contact__wrapper {
@@ -13,18 +18,38 @@
   height: 48rem;
   display: flex;
   box-shadow: 0 3.2rem 4.8rem rgba(0, 0, 0, 0.6);
+
+  @media (max-width: 1000px) {
+    width: 80%;
+  }
+  @media (max-width: 650px) {
+    width: 90%;
+    flex-direction: column;
+  }
 }
 .session-contact__wrapper__left {
   width: 35%;
   background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
     url(../img/contato.jpg);
   background-size: cover;
+
+  @media (max-width: 650px) {
+    width: 3000%;
+  }
 }
 
 .session-contact__wrapper__right {
   width: 65%;
   background-color: #eee;
   padding: 1.6rem 4.8rem 4.8rem 4.8rem;
+
+  @media (max-width: 650px) {
+    width: 100%;
+  }
+  @media (max-width: 450px) {
+    padding: 1.6rem 1.8rem 4.8rem 1.8rem;
+    overflow: hidden;
+  }
 }
 
 .session-contact .session-heading__title {
@@ -55,6 +80,11 @@
   height: 4.8rem;
   transition: border ease 0.5s;
   margin: 3rem 0;
+
+  @media (max-width: 450px) {
+    width: calc(32rem - 50%);
+    font-size: calc(2.4rem - 20%);
+  }
 }
 .field:focus {
   border-bottom: 1px solid #636363;
@@ -74,6 +104,10 @@
   font-family: var(--font-secondary);
   text-transform: uppercase;
   transition: all 0.3s;
+
+  @media (max-width: 450px) {
+    font-size: calc(1.92rem - 20%);
+  }
 }
 .label-msg {
   top: 3.8rem;

@@ -1,0 +1,19 @@
+.session-heading {
+  display: flex;
+  justify-content: center;
+}
+.session-heading__title {
+  font-family: var(--font-primary);
+  font-size: 4.8rem;
+  color: #4b4b4b;
+  border-bottom: solid 3px #6a3093;
+  margin-bottom: 2.4rem;
+  margin-top: 20px;
+
+  @media (max-width: 650px) {
+    font-size: 4rem;
+  }
+  @media (max-width: 450px) {
+    font-size: 3rem;
+  }
+}

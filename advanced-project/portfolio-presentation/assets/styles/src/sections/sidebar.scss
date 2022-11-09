@@ -12,6 +12,11 @@
   transition: right 0.5s, box-shadow 2s;
   box-shadow: none;
   z-index: 1;
+
+  @media (max-width: 450px) {
+    width: 100vw;
+    right: -100vw;
+  }
 }
 
 .sidebar.sidebar--showMenu {
