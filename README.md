@@ -35,6 +35,8 @@ Esse diretório não recebera mais atualizações.
 
 
 
+**Components:** Esse diretório é composto por partes específicas de sites, pequenas o suficiente para ser identificado como apenas um componente, como carousel, formularios, menus, rodapés, inputs etc...
+
 
 
 ---
