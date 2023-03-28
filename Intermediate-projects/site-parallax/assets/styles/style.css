@@ -35,6 +35,15 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 200;
+  transition: background 0.3s;
+  height: 80px;
+  border-bottom: 1px solid transparent;
+}
+header.scroll {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid #888;
 }
 
 header .logo {
@@ -65,6 +74,54 @@ header ul li a.active {
 header ul li a:hover {
   background: #fff;
   color: #2b1055;
+}
+
+/* menu burger */
+.header__toggleMobile {
+  width: 25px;
+  height: 25px;
+  display: none;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+}
+.header__toggleMobile__dash,
+.header__toggleMobile::before,
+.header__toggleMobile::after {
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+  top: 50%;
+  position: absolute;
+  z-index: 3;
+
+  transition: all ease-in 0.3s;
+}
+.header__toggleMobile::before {
+  content: "";
+  top: 10%;
+}
+.header__toggleMobile::after {
+  content: "";
+  top: 90%;
+}
+
+header.show .header__toggleMobile .header__toggleMobile__dash {
+  opacity: 0;
+  visibility: hidden;
+}
+header.show .header__toggleMobile::before {
+  opacity: 1;
+  visibility: visible;
+  top: 50%;
+  transform: rotate(45deg);
+}
+header.show .header__toggleMobile::after {
+  opacity: 1;
+  visibility: visible;
+  top: 50%;
+  transform: rotate(-45deg);
 }
 
 section {
@@ -147,4 +204,39 @@ section img#mountains_front {
 }
 .sec p {
   font-size: 2rem;
+}
+
+@media (max-width: 720px) {
+  header {
+    padding: 20px 70px;
+  }
+  header ul {
+    flex-direction: column;
+    gap: 50px;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    top: -50%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(000, 000, 000, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 0.5s;
+  }
+
+  header.show ul {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  header ul li a {
+    font-size: 1.85rem;
+  }
+
+  .header__toggleMobile {
+    display: block;
+  }
 }
