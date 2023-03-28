@@ -204,6 +204,7 @@ section img#mountains_front {
 }
 .sec p {
   font-size: 2rem;
+  text-align: justify;
 }
 
 @media (max-width: 720px) {
@@ -238,5 +239,42 @@ section img#mountains_front {
 
   .header__toggleMobile {
     display: block;
+  }
+  #text {
+    font-size: 9.5vw;
+  }
+
+  .sec {
+    padding: 50px 50px;
+  }
+
+  .sec h2 {
+    font-size: 2.4rem;
+    color: #ddd;
+  }
+  .sec p {
+    font-size: 1.6rem;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 420px) {
+  header {
+    padding: 20px 40px;
+  }
+  #text {
+    font-size: 12.5vw;
+  }
+  .sec {
+    padding: 30px 30px;
+  }
+
+  .sec h2 {
+    font-size: 2.2rem;
+    color: #ddd;
+  }
+  .sec p {
+    font-size: 1.4rem;
+    text-align: justify;
   }
 }
