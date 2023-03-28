@@ -16,6 +16,7 @@ html {
 body {
   min-height: 100vh;
   background: linear-gradient(#2b1055, #7597de);
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -25,7 +26,7 @@ li {
 }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -33,7 +34,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
+  z-index: 200;
 }
 
 header .logo {
@@ -74,6 +75,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 section::before {
@@ -112,6 +114,7 @@ section img#mountains_front {
 
 #text {
   position: absolute;
+  right: -350px;
   color: #fff;
   white-space: nowrap;
   font-size: 7.5vw;
