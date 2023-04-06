@@ -1,0 +1,286 @@
+@font-face {
+    font-family: 'FC BARCELONA';
+    src: url('FCBARCELONA-Bold.eot');
+    src: local('FC BARCELONA Bold'), local('FCBARCELONA-Bold'),
+        url('FCBARCELONA-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONA-Bold.woff2') format('woff2'),
+        url('FCBARCELONA-Bold.woff') format('woff'),
+        url('FCBARCELONA-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA KIDS';
+    src: url('FCBARCELONAKIDS-Regular.eot');
+    src: local('FC BARCELONA KIDS Regular'), local('FCBARCELONAKIDS-Regular'),
+        url('FCBARCELONAKIDS-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONAKIDS-Regular.woff2') format('woff2'),
+        url('FCBARCELONAKIDS-Regular.woff') format('woff'),
+        url('FCBARCELONAKIDS-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA';
+    src: url('FCBARCELONA-LightItalic.eot');
+    src: local('FC BARCELONA Light Italic'), local('FCBARCELONA-LightItalic'),
+        url('FCBARCELONA-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONA-LightItalic.woff2') format('woff2'),
+        url('FCBARCELONA-LightItalic.woff') format('woff'),
+        url('FCBARCELONA-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA';
+    src: url('FCBARCELONA-Heavy.eot');
+    src: local('FC BARCELONA Heavy'), local('FCBARCELONA-Heavy'),
+        url('FCBARCELONA-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONA-Heavy.woff2') format('woff2'),
+        url('FCBARCELONA-Heavy.woff') format('woff'),
+        url('FCBARCELONA-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA PLAY SOLID';
+    src: url('FCBARCELONAPLAYSOLID.eot');
+    src: local('FC BARCELONA PLAY SOLID'), local('FCBARCELONAPLAYSOLID'),
+        url('FCBARCELONAPLAYSOLID.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONAPLAYSOLID.woff2') format('woff2'),
+        url('FCBARCELONAPLAYSOLID.woff') format('woff'),
+        url('FCBARCELONAPLAYSOLID.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA KIDS';
+    src: url('FCBARCELONAKIDS-Black.eot');
+    src: local('FC BARCELONA KIDS Black'), local('FCBARCELONAKIDS-Black'),
+        url('FCBARCELONAKIDS-Black.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONAKIDS-Black.woff2') format('woff2'),
+        url('FCBARCELONAKIDS-Black.woff') format('woff'),
+        url('FCBARCELONAKIDS-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA';
+    src: url('FCBARCELONA-Italic.eot');
+    src: local('FC BARCELONA Italic'), local('FCBARCELONA-Italic'),
+        url('FCBARCELONA-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONA-Italic.woff2') format('woff2'),
+        url('FCBARCELONA-Italic.woff') format('woff'),
+        url('FCBARCELONA-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA PLAY LINE';
+    src: url('FCBARCELONAPLAYLINE.eot');
+    src: local('FC BARCELONA PLAY LINE'), local('FCBARCELONAPLAYLINE'),
+        url('FCBARCELONAPLAYLINE.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONAPLAYLINE.woff2') format('woff2'),
+        url('FCBARCELONAPLAYLINE.woff') format('woff'),
+        url('FCBARCELONAPLAYLINE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA KIDS';
+    src: url('FCBARCELONAKIDS-Bold.eot');
+    src: local('FC BARCELONA KIDS Bold'), local('FCBARCELONAKIDS-Bold'),
+        url('FCBARCELONAKIDS-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONAKIDS-Bold.woff2') format('woff2'),
+        url('FCBARCELONAKIDS-Bold.woff') format('woff'),
+        url('FCBARCELONAKIDS-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA';
+    src: url('FCBARCELONA-SemiboldItalic.eot');
+    src: local('FC BARCELONA Semibold Italic'), local('FCBARCELONA-SemiboldItalic'),
+        url('FCBARCELONA-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONA-SemiboldItalic.woff2') format('woff2'),
+        url('FCBARCELONA-SemiboldItalic.woff') format('woff'),
+        url('FCBARCELONA-SemiboldItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA';
+    src: url('FCBARCELONA-HeavyItalic.eot');
+    src: local('FC BARCELONA Heavy Italic'), local('FCBARCELONA-HeavyItalic'),
+        url('FCBARCELONA-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONA-HeavyItalic.woff2') format('woff2'),
+        url('FCBARCELONA-HeavyItalic.woff') format('woff'),
+        url('FCBARCELONA-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA';
+    src: url('FCBARCELONA-BoldItalic.eot');
+    src: local('FC BARCELONA Bold Italic'), local('FCBARCELONA-BoldItalic'),
+        url('FCBARCELONA-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONA-BoldItalic.woff2') format('woff2'),
+        url('FCBARCELONA-BoldItalic.woff') format('woff'),
+        url('FCBARCELONA-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA';
+    src: url('FCBARCELONA-Semibold.eot');
+    src: local('FC BARCELONA Semibold'), local('FCBARCELONA-Semibold'),
+        url('FCBARCELONA-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONA-Semibold.woff2') format('woff2'),
+        url('FCBARCELONA-Semibold.woff') format('woff'),
+        url('FCBARCELONA-Semibold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA CONDENSED';
+    src: url('FCBARCELONACONDENSED.eot');
+    src: local('FC BARCELONA CONDENSED'), local('FCBARCELONACONDENSED'),
+        url('FCBARCELONACONDENSED.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONACONDENSED.woff2') format('woff2'),
+        url('FCBARCELONACONDENSED.woff') format('woff'),
+        url('FCBARCELONACONDENSED.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA KIDS';
+    src: url('FCBARCELONAKIDS-Extrabold.eot');
+    src: local('FC BARCELONA KIDS Extrabold'), local('FCBARCELONAKIDS-Extrabold'),
+        url('FCBARCELONAKIDS-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONAKIDS-Extrabold.woff2') format('woff2'),
+        url('FCBARCELONAKIDS-Extrabold.woff') format('woff'),
+        url('FCBARCELONAKIDS-Extrabold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA';
+    src: url('FCBARCELONA-ExtraboldItalic.eot');
+    src: local('FC BARCELONA Extrabold Italic'), local('FCBARCELONA-ExtraboldItalic'),
+        url('FCBARCELONA-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONA-ExtraboldItalic.woff2') format('woff2'),
+        url('FCBARCELONA-ExtraboldItalic.woff') format('woff'),
+        url('FCBARCELONA-ExtraboldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA';
+    src: url('FCBARCELONA-Extrabold.eot');
+    src: local('FC BARCELONA Extrabold'), local('FCBARCELONA-Extrabold'),
+        url('FCBARCELONA-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONA-Extrabold.woff2') format('woff2'),
+        url('FCBARCELONA-Extrabold.woff') format('woff'),
+        url('FCBARCELONA-Extrabold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA KIDS';
+    src: url('FCBARCELONAKIDS-Light.eot');
+    src: local('FC BARCELONA KIDS Light'), local('FCBARCELONAKIDS-Light'),
+        url('FCBARCELONAKIDS-Light.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONAKIDS-Light.woff2') format('woff2'),
+        url('FCBARCELONAKIDS-Light.woff') format('woff'),
+        url('FCBARCELONAKIDS-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA';
+    src: url('FCBARCELONA-Light.eot');
+    src: local('FC BARCELONA Light'), local('FCBARCELONA-Light'),
+        url('FCBARCELONA-Light.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONA-Light.woff2') format('woff2'),
+        url('FCBARCELONA-Light.woff') format('woff'),
+        url('FCBARCELONA-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA';
+    src: url('FCBARCELONA-ThinItalic.eot');
+    src: local('FC BARCELONA Thin Italic'), local('FCBARCELONA-ThinItalic'),
+        url('FCBARCELONA-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONA-ThinItalic.woff2') format('woff2'),
+        url('FCBARCELONA-ThinItalic.woff') format('woff'),
+        url('FCBARCELONA-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA';
+    src: url('FCBARCELONA-Regular.eot');
+    src: local('FC BARCELONA'), local('FCBARCELONA-Regular'),
+        url('FCBARCELONA-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONA-Regular.woff2') format('woff2'),
+        url('FCBARCELONA-Regular.woff') format('woff'),
+        url('FCBARCELONA-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FC BARCELONA';
+    src: url('FCBARCELONA-Thin.eot');
+    src: local('FC BARCELONA Thin'), local('FCBARCELONA-Thin'),
+        url('FCBARCELONA-Thin.eot?#iefix') format('embedded-opentype'),
+        url('FCBARCELONA-Thin.woff2') format('woff2'),
+        url('FCBARCELONA-Thin.woff') format('woff'),
+        url('FCBARCELONA-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

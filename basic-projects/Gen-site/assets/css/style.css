@@ -1,20 +1,48 @@
+:root {
+  --bg-header: #181733;
+  --navLinks: #fdc52c;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: "Inter", sans-serif;
+  font-family: "FC Barcelona", "Inter", sans-serif;
+  font-size: 1.6rem;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 header {
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   padding: 0 50px;
-  background-color: #121214;
+  background-color: var(--bg-header);
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  font-size: 20px;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: inherit;
+  height: 8px;
+  background: linear-gradient(90deg, #cd122d 0, #154284);
 }
 
 .nav {
@@ -23,18 +51,29 @@ header {
 }
 
 .logo {
-  color: #ddd;
-  font-size: 26px;
-  font-weight: 800;
-  text-decoration: line-through;
+  width: 40px;
+  scale: 1.8;
+  position: absolute;
+  z-index: 2;
+  left: 50px;
+  top: 20px;
 }
 
 .nav a {
-  color: #ddd;
+  color: #fdc52c;
   transition: all 0.2s;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
 }
-.nav a:hover {
-  color: #666;
+
+.nav:hover a {
+  opacity: 0.5;
+  color: #eee;
+}
+.nav:hover a:hover {
+  opacity: 1;
+  color: #fdc52c;
 }
 
 h1 {
@@ -56,4 +95,87 @@ h1 {
 
 .video {
   text-align: center;
+}
+
+.miniRodape {
+  position: fixed;
+  height: 56px;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 10rem);
+  opacity: 0;
+  border-radius: 2.5rem;
+  display: flex;
+  background: linear-gradient(90deg, #8d1a17, #181733);
+  align-items: center;
+  padding: 0 25px;
+  gap: 15px;
+  transition: transform 0.8s, opacity 0.5s;
+}
+.miniRodape--active {
+  transform: translate(-50%);
+  opacity: 1;
+}
+
+.miniRodape__menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 500;
+}
+
+.miniRodape__icon {
+  color: #fff;
+  width: 2.5rem;
+  transform: rotate(-20deg);
+}
+.miniRodape__titulo {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.miniRodape__item {
+  position: relative;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.miniRodape__item a {
+  color: #fdc52c;
+  width: auto;
+  text-align: center;
+  display: block;
+  font-style: italic;
+}
+.miniRodape__item a:hover {
+  text-decoration: underline;
+}
+
+.miniRodape__item:not(:last-child) a::after {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  display: inline-block;
+  margin-left: 1rem;
+  border-radius: 100%;
+  background: #fdc52c;
+  transform: translateY(-3px);
+}
+.miniRodape__login {
+  display: flex;
+  align-items: center;
+  border-left: 0.1rem solid hsla(0, 0%, 100%, 0.15);
+}
+
+.miniRodape__login a {
+  padding: 0 15px;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.miniRodape__login a:hover {
+  text-decoration: underline;
+}
+.miniRodape__login strong {
+  border-left: 0.1rem solid hsla(0, 0%, 100%, 0.15);
 }

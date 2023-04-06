@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/fonts/fonts.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,20 +16,22 @@
   </head>
   <body>
     <header>
-      <a href="/" class="logo">Logo</a>
+      <a href="#">
+        <img src="./assets/img/logo.png" alt="" class="logo" />
+      </a>
       <nav>
         <ul class="nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">Projetos</a></li>
-          <li><a href="">Contato</a></li>
+          <li><a href="">Tickets & Museum</a></li>
+          <li><a href="">SHOP</a></li>
+          <li><a href="">Barça TV+</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1>Barcelona</h1>
       <div class="banner">
         <div>
+          <h1>Barcelona</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
             deserunt sit, dignissimos est voluptatum beatae. Officia,
@@ -44,10 +47,7 @@
             voluptatum?
           </p>
         </div>
-        <img
-          src="https://trthaberstatic.cdn.wp.trt.com.tr/resimler/574000/574995.jpg"
-          alt="foto do trio MSN do barcelona"
-        />
+        <img src="./assets/img/mes.png" alt="foto do trio MSN do barcelona" />
       </div>
       <div class="video">
         <iframe
@@ -61,5 +61,48 @@
         ></iframe>
       </div>
     </main>
+
+    <section class="miniRodape">
+      <ul class="miniRodape__menu">
+        <svg
+          class="miniRodape__icon"
+          width="46"
+          height="46"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19.122 2.448S15.061 7.5 11.25 7.5h-7.5a.75.75 0 0 0-.75.75v4.5a.75.75 0 0 0 .75.75h7.5c3.81 0 7.872 5.073 7.872 5.073.284.375 1.128.119 1.128-.46V2.906c0-.577-.797-.882-1.128-.458Z"
+          ></path>
+          <path d="M3 12s-.75-.281-.75-1.5C2.25 9.281 3 9 3 9"></path>
+          <path
+            d="M21 11.531s.75-.203.75-1.031c0-.828-.75-1.031-.75-1.031"
+          ></path>
+          <path d="M12 7.5v6"></path>
+          <path d="M5.25 7.5v6"></path>
+          <path
+            d="M6.75 13.5v7.875a.375.375 0 0 0 .375.375h2.484a.75.75 0 0 0 .717-.972C9.933 19.518 9 18.098 9 15.75h.75a.75.75 0 0 0 .75-.75v-.75a.75.75 0 0 0-.75-.75H9"
+          ></path>
+        </svg>
+        <span class="miniRodape__titulo">don`t miss</span>
+        <li class="miniRodape__item"><a href="">Culers</a></li>
+        <li class="miniRodape__item"><a href="">Barça TV+</a></li>
+        <li class="miniRodape__item"><a href="">Barça Store CN</a></li>
+        <li class="miniRodape__item"><a href="">Tickets</a></li>
+      </ul>
+      <div class="miniRodape__login">
+        <a href="">Login</a>
+        <strong>
+          <a href="">Become a Culer</a>
+        </strong>
+      </div>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
